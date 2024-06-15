@@ -1,0 +1,11 @@
+services:
+  go-server:
+    build:
+      context: ./go-server
+    ports:
+      - "8080:8080"
+    networks:
+      - marry_me_kafka
+
+networks:
+  marry_me_kafka:
